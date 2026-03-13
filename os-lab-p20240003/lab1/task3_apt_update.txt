@@ -1,0 +1,15 @@
+Hit:1 http://kh.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://kh.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://kh.archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:4 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1,512 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [243 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [976 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [219 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.2 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [20.7 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Fetched 3,193 kB in 3s (967 kB/s)
+Reading package lists...

@@ -14,7 +14,7 @@
 </pre>
 <!-- Insert your screenshot for Task 1 below: -->
 <!-- SCREENSHOT REQUIREMENT: Show the terminal after running uname -a and lsb_release -a, or the contents of your task1_os_info.txt file. -->
-![task 1](images/task1.png)
+![task 1](images/Task1.png)
 ---
 
 ## Task 2: Essential Linux File and Directory Commands
@@ -33,7 +33,7 @@
 <!-- Insert your screenshot for Task 2 below: -->
 <!-- SCREENSHOT REQUIREMENT: Show the terminal running the file manipulation commands (mkdir, touch, cp, mv, rm) or the final cat of your task2_file_commands.txt file. -->
 
-![task 2](images/task2.png)
+![task 2](images/Task2.png)
 
 ---
 
@@ -58,7 +58,7 @@ The difference that I observed it that `remove` just uninstalls the program wher
 <!-- Insert your screenshot for Task 3 below: -->
 <!-- SCREENSHOT REQUIREMENT: Show the output of ls -ld /etc/mc after running apt-get remove (folder still exists) versus after running apt-get purge (folder is gone). -->
 
-![task 3](images/task3.png)
+![task 3](images/Task3.png)
 
 ---
 
@@ -78,7 +78,7 @@ The background process ran `sleep 120 &` and that threw it into the backgrounf a
 <!-- Insert your screenshot for Task 4 below: -->
 <!-- SCREENSHOT REQUIREMENT: Show the terminal where you ran sleep 120 & and the subsequent ps output showing the sleep process running. -->
 
-![task 4](images/task4.png)
+![task 4](images/Task4.png)
 
 ---
 
@@ -93,7 +93,7 @@ The background process ran `sleep 120 &` and that threw it into the backgrounf a
 <!-- Insert your screenshot for Task 5 below: -->
 <!-- SCREENSHOT REQUIREMENT: Show the terminal ps output capturing the multiple background tasks (sleep and python3 server) running at the same time. -->
 
-![task 5](images/task5.png)
+![task 5](images/Task5.png)
 
 ---
 
@@ -109,7 +109,7 @@ The background process ran `sleep 120 &` and that threw it into the backgrounf a
 <!-- Insert your screenshot for Task 6 below: -->
 <!-- SCREENSHOT REQUIREMENT: Show the terminal output of the systemd-detect-virt and lscpu commands. -->
 
-![task 6](images/task6.png)
+![task 6](images/Task6.png)
 
 ## Repository and folder structure 
 
@@ -118,12 +118,12 @@ os-se-p20240001/
 └── os-lab-p20240001/
     └── lab1/
         ├── images/
-        │   ├── task1.png
-        │   ├── task2.png
-        │   ├── task3.png
-        │   ├── task4.png
-        │   ├── task5a.png
-        │   └── task6.png
+        │   ├── Task1.png
+        │   ├── Task2.png
+        │   ├── Task3.png
+        │   ├── Task4.png
+        │   ├── Task5a.png
+        │   └── Task6.png
         ├── task1_os_info.txt
         ├── task2_file_commands.txt
         ├── task2_files/

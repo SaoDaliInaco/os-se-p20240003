@@ -14,7 +14,7 @@ Screenshot of running `hello_syscall.c` on Linux:
 
 Screenshot of running `hello_winapi.c` on Windows (CMD/PowerShell/VS Code):
 
-![Hello WinAPI](warmup_ex3.png)
+![Hello WinAPI](screenshots/warmup_ex3.png)
 
 Screenshot of running `copyfilesyscall.c` on Linux:
 

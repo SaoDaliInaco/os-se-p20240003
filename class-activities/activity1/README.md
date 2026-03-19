@@ -14,11 +14,11 @@ Screenshot of running `hello_syscall.c` on Linux:
 
 Screenshot of running `hello_winapi.c` on Windows (CMD/PowerShell/VS Code):
 
-![Hello WinAPI](screenshots/warmup_ex3.png)
+![Hello WinAPI](screenshots/hello_winapi.png)
 
 Screenshot of running `copyfilesyscall.c` on Linux:
 
-![Copy file syscall](screenshots/copyfilesyscall.png)
+![Copy file syscall](screenshots/warmup_ex3.png)
 
 ---
 

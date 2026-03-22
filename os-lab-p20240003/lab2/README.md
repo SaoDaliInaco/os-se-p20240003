@@ -100,18 +100,19 @@ history | tail -n 50
 
 <!-- Insert your screenshot below: -->
 ![alt text](images/full_history.png)
-
 ---
 
 ### Folder structure
+
+```
 .
 ├── images
-│   ├── task4_challenge.png
-│   ├── task4_history.png
-│   ├── task5_challenge.png
-│   ├── task5_history.png
-│   ├── task6_challenge.png
-│   └── task6_history.png
+│   ├── task4_challenge.png
+│   ├── task4_history.png
+│   ├── task5_challenge.png
+│   ├── task5_history.png
+│   ├── task6_challenge.png
+│   └── task6_history.png
 ├── README.md
 ├── task1_basic_navigation.txt
 ├── task2_filesystem_exploration.txt
@@ -121,37 +122,38 @@ history | tail -n 50
 ├── task6_advanced_listing.txt
 └── techcorp
     ├── engineering
-    │   ├── backend
-    │   │   ├── app.js
-    │   │   ├── database.sql
-    │   │   └── server_config.txt
-    │   ├── devops
-    │   │   ├── docker-compose.yml
-    │   │   ├── Dockerfile
-    │   │   ├── pipeline.txt
-    │   │   ├── security_audit.txt
-    │   │   └── server_notice.txt
-    │   └── frontend
-    │       ├── app_config.txt
-    │       ├── index.html
-    │       └── styles.css
+    │   ├── backend
+    │   │   ├── app.js
+    │   │   ├── database.sql
+    │   │   └── server_config.txt
+    │   ├── devops
+    │   │   ├── docker-compose.yml
+    │   │   ├── Dockerfile
+    │   │   ├── pipeline.txt
+    │   │   ├── security_audit.txt
+    │   │   └── server_notice.txt
+    │   └── frontend
+    │       ├── app_config.txt
+    │       ├── index.html
+    │       └── styles.css
     ├── hr
-    │   ├── onboarding
-    │   │   ├── checklist.txt
-    │   │   ├── handbook.txt
-    │   │   ├── leave_policy.txt
-    │   │   └── welcome_guide.txt
-    │   ├── policies
-    │   │   ├── leave_policy.txt
-    │   │   └── remote_work.txt
-    │   └── task5_file_organization.txt
+    │   ├── onboarding
+    │   │   ├── checklist.txt
+    │   │   ├── handbook.txt
+    │   │   ├── leave_policy.txt
+    │   │   └── welcome_guide.txt
+    │   ├── policies
+    │   │   ├── leave_policy.txt
+    │   │   └── remote_work.txt
+    │   └── task5_file_organization.txt
     └── marketing
         ├── assets
-        │   ├── banner.jpg
-        │   ├── brochure.pdf
-        │   ├── logo_brief.txt
-        │   └── logo.png
+        │   ├── banner.jpg
+        │   ├── brochure.pdf
+        │   ├── logo_brief.txt
+        │   └── logo.png
         └── campaigns
             ├── q1_2026_launch.txt
             └── social_media.txt
+```
 

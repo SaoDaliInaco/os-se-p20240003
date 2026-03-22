@@ -50,11 +50,15 @@ Screenshot of running `copyfilesyscall.c` on Linux:
 
 3. **What does `fopen("output.txt", "w")` do internally that you had to do manually?**
 
-   > Calls open() with flags like O_CREAT | O_WRONLY | O_TRUNC
->Sets file permissions (e.g., 0644)
->Returns a file stream (FILE *) instead of a file descriptor
->Handles buffering automatically
->Manages low-level system calls like write() for you
+Calls open() with flags like O_CREAT | O_WRONLY | O_TRUNC
+
+Sets file permissions (e.g., 0644)
+
+Returns a file stream (FILE *)
+
+Handles buffering automatically
+
+Manages low-level system calls like write( >Manages low-level system calls like write() for you
 
 ### Part B — File Reader & Display
 

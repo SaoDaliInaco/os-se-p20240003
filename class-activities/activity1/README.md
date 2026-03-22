@@ -42,15 +42,19 @@ Screenshot of running `copyfilesyscall.c` on Linux:
 
 1. **What flags did you pass to `open()`? What does each flag mean?**
 
-   > [Your answer]
+   > O_CREAT | O_WRONLY | O_TRUNC
 
 2. **What is `0644`? What does each digit represent?**
 
-   > [Your answer]
+   > 0644 is a file permission in octal format.
 
 3. **What does `fopen("output.txt", "w")` do internally that you had to do manually?**
 
-   > [Your answer]
+   > Calls open() with flags like O_CREAT | O_WRONLY | O_TRUNC
+>Sets file permissions (e.g., 0644)
+>Returns a file stream (FILE *) instead of a file descriptor
+>Handles buffering automatically
+>Manages low-level system calls like write() for you
 
 ### Part B — File Reader & Display
 

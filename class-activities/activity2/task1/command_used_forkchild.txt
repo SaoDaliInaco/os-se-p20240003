@@ -1,0 +1,20 @@
+  246  ls *[0-9].* >> task1_wildcard_challenge.txt
+  247  cat task1_wildcard_challenge.txt
+  248  cd ..
+  249  mkdir images
+  250  git add .
+  251  git commit -m "finish task1"
+  252  git push origin master
+  253  cd ..
+  254  cd class-activities
+  255  mkdir activity2/task1
+  256  mkdir activity2
+  257  cd activity2
+  258  mkdir task1
+  259  cd task1
+  260  nano forkchild.c
+  261  gcc -o forkchild forkchild.c
+  262  ./forkchild > result_forkchild.txt 2>&1
+  263  cat result_forkchild.txt
+  264  ps -ef --forest | grep forkchild
+  265  history | tail -n 20 > command_used_forkchild.txt

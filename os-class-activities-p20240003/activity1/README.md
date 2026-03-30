@@ -27,6 +27,7 @@ Screenshot of running `copyfilesyscall.c` on Linux:
 ### Part A — File Creator
 
 **Describe your implementation:** [What differences did you notice between the library version and the system call version?]
+> The library version is easier and more readable because it uses high-level functions like `fopen()`. The system call version uses low-level functions like `open()` and `write()`, which give more control but are more complex.
 
 **Version A — Library Functions (`file_creator_lib.c`):**
 

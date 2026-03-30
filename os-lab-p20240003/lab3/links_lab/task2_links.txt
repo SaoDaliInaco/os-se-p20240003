@@ -1,0 +1,11 @@
+---- Challenge Links ----
+total 20
+936961 -rw-rw-r-- 1 inaco inaco   72 Mar 30 17:47 config_hardlink.txt
+937062 lrwxrwxrwx 1 inaco inaco   19 Mar 30 17:44 config_symlink.txt -> config_original.txt
+919003 -rw-rw-r-- 2 inaco inaco   35 Mar 30 17:58 eng_data.txt
+919003 -rw-rw-r-- 2 inaco inaco   35 Mar 30 17:58 hr_data.txt
+918774 drwxrwxr-x 3 inaco inaco 4096 Mar 30 17:53 projects
+935867 -rw-rw-r-- 1 inaco inaco   26 Mar 30 18:01 task2_links.txt
+918799 lrwxrwxrwx 1 inaco inaco   17 Mar 30 17:53 web_shortcut -> projects/frontend
+Shared resource across departments
+Shared resource across departments

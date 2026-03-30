@@ -64,6 +64,7 @@ Screenshot of running `copyfilesyscall.c` on Linux:
 ### Part B — File Reader & Display
 
 **Describe your implementation:** [Your notes]
+>The library version is easier and more readable because it uses high-level functions like `fopen()`. The system call version uses low-level functions like `open()` and `write()`, which give more control but are more complex.
 
 **Version A — Library Functions (`file_reader_lib.c`):**
 
@@ -77,17 +78,21 @@ Screenshot of running `copyfilesyscall.c` on Linux:
 
 1. **What does `read()` return? How is this different from `fgets()`?**
 
-   > [Your answer]
+   > read() returns the number of bytes read (0 = EOF, -1 = error).
+   >fgets() reads a line and returns a string, stopping at newline.
 
 2. **Why do you need a loop when using `read()`? When does it stop?**
 
-   > [Your answer]
+   > A loop is needed because read() reads in chunks.
+   >It stops when read() returns 0 (EOF).
 
 ---
 
 ## Task 2: Directory Listing & File Info
 
 **Describe your implementation:** [Your notes]
+
+>The library version is simpler and uses functions like `opendir()` and `readdir()` to list files easily. The system call version is more complex and uses lower-level operations to read directory entries manually. Both produce similar outputs, but the library version is easier to write and understand, while the system call version provides more control.
 
 ### Version A — Library Functions (`dir_list_lib.c`)
 
@@ -101,15 +106,15 @@ Screenshot of running `copyfilesyscall.c` on Linux:
 
 1. **What struct does `readdir()` return? What fields does it contain?**
 
-   > [Your answer]
+   > It returns a pointer to a struct dirent.It contains fields like the file name (d_name) and inode number (d_ino).
 
 2. **What information does `stat()` provide beyond file size?**
 
-   > [Your answer]
+   > It provides extra info like file type, permissions, owner, and timestamps (creation, access, modification).
 
 3. **Why can't you `write()` a number directly — why do you need `snprintf()` first?**
 
-   > [Your answer]
+   > Because only works with bytes (strings), not numbers.So snprintf() is needed to convert numbers into text before writing.
 
 ---
 
@@ -169,19 +174,25 @@ Screenshot of running on Windows:
 
 1. **How many system calls does the library version make compared to the system call version?**
 
-   > [Your answer — use the `strace -c` counts]
+   > Library version: 38 calls
+   > System call version: 33 calls
+   
 
 2. **What extra system calls appear in the library version? What do they do?**
 
-   > [Your answer — mention `brk`, `mmap`, `fstat`, etc.]
+   > Extra calls include: brk, mmap, munmap, mprotect, fstat
+   > Memory allocation (brk, mmap)
+   > Memory management (munmap, mprotect)
+   > Getting file info (fstat)
 
 3. **How many `write()` calls does `fprintf()` actually produce?**
 
-   > [Your answer]
+   > 2 write() calls
 
 4. **In your own words, what is the real difference between a library function and a system call?**
 
-   > [Your answer]
+   > Library functions are higher-level and easier to use, but they internally call multiple system calls.
+   > System calls are low-level operations that directly interact with the OS and give more control.
 
 ---
 
@@ -215,23 +226,29 @@ Screenshot of running on Windows:
 
 1. **What is `/proc`? Is it a real filesystem on disk?**
 
-   > [Your answer]
+   > /proc is a virtual filesystem that shows system and process information. It is not a real filesystem on disk; it is created by the kernel in memory.
 
 2. **Monolithic kernel vs. microkernel — which type does Linux use?**
 
-   > [Your answer]
+   > Linux uses a monolithic kernel (with modular support like isofs, snd_pcm, gameport shown in your output).
 
 3. **What memory regions do you see in `/proc/self/maps`?**
 
-   > [Your answer]
+   > Program (/usr/bin/cat)
+   > [heap]
+   > Shared libraries 
+   > Memory mappings for execution and data
 
 4. **Break down the kernel version string from `uname -a`.**
 
-   > [Your answer]
+   > Kernel: Linux 6.17.0-19-generic
+   > OS: Ubuntu
+   > Architecture: x86_64
+   > Build info: date, SMP, PREEMPT_DYNAMIC
 
 5. **How does `/proc` show that the OS is an intermediary between programs and hardware?**
 
-   > [Your answer]
+   > /proc exposes hardware and system info (CPU, memory, processes) through files. This shows that programs don’t access hardware directly—they go through the OS (kernel), which provides this information.
 
 ---
 
@@ -239,4 +256,4 @@ Screenshot of running on Windows:
 
 What did you learn from this activity? What was the most surprising difference between library functions and system calls?
 
-> [Write your reflection here]
+> I learned how library functions and system calls work differently and how they interact with the operating system. The most surprising part was seeing through strace that library functions actually make multiple system calls behind the scenes, which makes them easier to use but less direct. I also learned how the /proc system provides real-time system and process information.

@@ -1,0 +1,316 @@
+/
+total 3814500
+drwxr-xr-x  23 root root       4096 Feb  1 15:43 .
+drwxr-xr-x  23 root root       4096 Feb  1 15:43 ..
+lrwxrwxrwx   1 root root          7 Apr 22  2024 bin -> usr/bin
+drwxr-xr-x   2 root root       4096 Feb 26  2024 bin.usr-is-merged
+drwxr-xr-x   3 root root       4096 Mar 12 16:17 boot
+dr-xr-xr-x   2 root root       4096 Aug  6  2025 cdrom
+drwxr-xr-x  19 root root       4260 Mar 18 22:38 dev
+drwxr-xr-x 139 root root      12288 Mar 17 23:36 etc
+drwxr-xr-x   3 root root       4096 Feb  1 21:01 home
+lrwxrwxrwx   1 root root          7 Apr 22  2024 lib -> usr/lib
+lrwxrwxrwx   1 root root          9 Apr 22  2024 lib64 -> usr/lib64
+drwxr-xr-x   2 root root       4096 Apr  8  2024 lib.usr-is-merged
+drwx------   2 root root      16384 Feb  1 15:38 lost+found
+drwxr-xr-x   3 root root       4096 Feb  1 21:01 media
+drwxr-xr-x   2 root root       4096 Aug  5  2025 mnt
+drwxr-xr-x   2 root root       4096 Aug  5  2025 opt
+dr-xr-xr-x 375 root root          0 Mar 18 22:38 proc
+drwx------   6 root root       4096 Mar  4 13:55 root
+drwxr-xr-x  35 root root        880 Mar 18 22:44 run
+lrwxrwxrwx   1 root root          8 Apr 22  2024 sbin -> usr/sbin
+drwxr-xr-x   2 root root       4096 Mar 31  2024 sbin.usr-is-merged
+drwxr-xr-x  12 root root       4096 Aug  5  2025 snap
+drwxr-xr-x   2 root root       4096 Aug  5  2025 srv
+-rw-------   1 root root 3905945600 Feb  1 15:43 swap.img
+dr-xr-xr-x  13 root root          0 Mar 18 22:38 sys
+drwxrwxrwt  17 root root       4096 Mar 18 23:11 tmp
+drwxr-xr-x  12 root root       4096 Aug  5  2025 usr
+drwxr-xr-x  14 root root       4096 Feb  1 21:00 var
+--- /etc ---
+/etc
+adduser.conf
+alsa
+alternatives
+anacrontab
+apg.conf
+apm
+apparmor
+apparmor.d
+apport
+apt
+avahi
+bash.bashrc
+bash_completion
+bash_completion.d
+bindresvport.blacklist
+binfmt.d
+bluetooth
+brlapi.key
+brltty
+brltty.conf
+ca-certificates
+ca-certificates.conf
+chatscripts
+cloud
+colord
+console-setup
+cracklib
+credstore
+credstore.encrypted
+cron.d
+cron.daily
+cron.hourly
+cron.monthly
+crontab
+cron.weekly
+cron.yearly
+cups
+cupshelpers
+dbus-1
+dconf
+debconf.conf
+debian_version
+debuginfod
+default
+deluser.conf
+depmod.d
+dhcp
+dhcpcd.conf
+dictionaries-common
+dpkg
+e2scrub.conf
+emacs
+environment
+environment.d
+ethertypes
+fonts
+fprintd.conf
+fstab
+fuse.conf
+fwupd
+gai.conf
+gdb
+gdm3
+geoclue
+ghostscript
+glvnd
+gnome
+gnome-remote-desktop
+gnutls
+gprofng.rc
+groff
+group
+group-
+grub.d
+gshadow
+gshadow-
+gss
+gtk-2.0
+gtk-3.0
+hdparm.conf
+host.conf
+hostname
+hosts
+hosts.allow
+hosts.deny
+hp
+ifplugd
+init
+init.d
+initramfs-tools
+inputrc
+insserv.conf.d
+ipp-usb
+iproute2
+issue
+issue.net
+kernel
+kerneloops.conf
+krb5.conf.d
+ldap
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+legal
+libao.conf
+libaudit.conf
+libblockdev
+libibverbs.d
+libnl-3
+libpaper.d
+locale.alias
+locale.conf
+locale.gen
+localtime
+logcheck
+login.defs
+logrotate.conf
+logrotate.d
+lsb-release
+machine-id
+magic
+magic.mime
+mailcap
+mailcap.order
+manpath.config
+mime.types
+mke2fs.conf
+ModemManager
+modprobe.d
+modules
+modules-load.d
+mtab
+nanorc
+netconfig
+netplan
+network
+networkd-dispatcher
+NetworkManager
+networks
+newt
+nftables.conf
+nsswitch.conf
+openvpn
+opt
+os-release
+PackageKit
+pam.conf
+pam.d
+papersize
+passwd
+passwd-
+pcmcia
+perl
+pki
+plymouth
+pm
+pnm2ppa.conf
+polkit-1
+ppp
+printcap
+profile
+profile.d
+protocols
+pulse
+python3
+python3.12
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rcS.d
+resolv.conf
+rmt
+rpc
+rsyslog.conf
+rsyslog.d
+rygel.conf
+sane.d
+security
+selinux
+sensors3.conf
+sensors.d
+services
+sgml
+shadow
+shadow-
+shells
+skel
+snmp
+speech-dispatcher
+ssh
+ssl
+sssd
+subgid
+subgid-
+subuid
+subuid-
+sudo.conf
+sudoers
+sudoers.d
+sudo_logsrvd.conf
+supercat
+sysctl.conf
+sysctl.d
+sysstat
+systemd
+terminfo
+thermald
+timezone
+tmpfiles.d
+ubuntu-advantage
+ucf.conf
+udev
+udisks2
+ufw
+update-manager
+update-motd.d
+update-notifier
+UPower
+usb_modeswitch.conf
+usb_modeswitch.d
+vconsole.conf
+vim
+vtrgb
+vulkan
+wgetrc
+wpa_supplicant
+X11
+xattr.conf
+xdg
+xml
+zsh_command_not_found
+--- /var ---
+/var
+backups
+cache
+crash
+lib
+local
+lock
+log
+mail
+metrics
+opt
+run
+snap
+spool
+tmp
+--- /home ---
+/home
+inaco
+total 12
+drwxr-xr-x  3 root  root  4096 Feb  1 21:01 .
+drwxr-xr-x 23 root  root  4096 Feb  1 15:43 ..
+drwxr-x--- 18 inaco inaco 4096 Mar 12 16:52 inaco
+--- /tmp ---
+/tmp
+total 84
+drwxrwxrwt 17 root  root  4096 Mar 18 23:11 .
+drwxr-xr-x 23 root  root  4096 Feb  1 15:43 ..
+drwxrwxrwt  2 root  root  4096 Mar 18 22:38 .font-unix
+drwxrwxrwt  2 root  root  4096 Mar 18 23:05 .ICE-unix
+drwx------  4 root  root  4096 Mar 18 22:38 snap-private-tmp
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-colord.service-xwdLLd
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-ModemManager.service-wYb60y
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-polkit.service-QW3yBT
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-power-profiles-daemon.service-ZDkWq2
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-switcheroo-control.service-LdASNA
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-systemd-logind.service-aV5JX7
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-systemd-oomd.service-i0sh67
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-systemd-resolved.service-9pxiJk
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-systemd-timesyncd.service-9bluB7
+drwx------  3 root  root  4096 Mar 18 22:38 systemd-private-1050bcc36253419a80904bc79d19dbcb-upower.service-xDsdba
+-r--r--r--  1 inaco inaco   11 Mar 18 23:05 .X0-lock
+-r--r--r--  1 gdm   gdm     11 Mar 18 22:38 .X1024-lock
+-r--r--r--  1 gdm   gdm     11 Mar 18 22:38 .X1025-lock
+drwxrwxrwt  2 root  root  4096 Mar 18 23:05 .X11-unix
+-r--r--r--  1 inaco inaco   11 Mar 18 23:05 .X1-lock
+drwxrwxrwt  2 root  root  4096 Mar 18 22:38 .XIM-unix
+--- Home(~) ---
+/home/inaco

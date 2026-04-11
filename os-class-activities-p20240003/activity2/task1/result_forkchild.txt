@@ -1,0 +1,10 @@
+total 32
+drwxrwxr-x 2 inaco inaco  4096 Mar 24 17:49 .
+drwxrwxr-x 3 inaco inaco  4096 Mar 24 17:45 ..
+-rwxrwxr-x 1 inaco inaco 16400 Mar 24 17:49 forkchild
+-rw-rw-r-- 1 inaco inaco  1431 Mar 24 17:49 forkchild.c
+-rw-rw-r-- 1 inaco inaco     0 Mar 24 17:49 result_forkchild.txt
+Parent process (PID: 17818) — creating child...
+Parent: waiting for child (PID: 17819) to finish...
+Parent: child exited with status 0
+Parent: done.

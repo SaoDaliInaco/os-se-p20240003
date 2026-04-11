@@ -1,0 +1,37 @@
+=== Task 1: Wildcard Challenge ===
+--- Files matching [jfm]*.log ---
+--- Files matching log_[jfm]*.log ---
+log_feb.log
+log_jan.log
+log_mar.log
+--- Files with exactly 3 characters ---
+--- Files with pattern data??.csv ---
+data01.csv
+data02.csv
+data03.csv
+--- Files with pattern image?.png ---
+image1.png
+image2.png
+--- All .txt files ---
+notes.txt
+readme.txt
+report01.txt
+report02.txt
+report03.txt
+report10.txt
+summary.txt
+task1_wildcard_challenge.txt
+--- Files ending with number ---
+backup1.tar.gz
+backup2.tar.gz
+data01.csv
+data02.csv
+data03.csv
+image1.png
+image2.png
+image3.jpg
+image4.jpg
+report01.txt
+report02.txt
+report03.txt
+report10.txt

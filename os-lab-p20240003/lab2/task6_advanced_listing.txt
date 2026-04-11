@@ -1,0 +1,237 @@
+=== Task 6: Advanced Listing & Directory Audit ===
+--- Recursive Listing (ls -R) ---
+techcorp:
+engineering
+hr
+marketing
+
+techcorp/engineering:
+backend
+devops
+frontend
+
+techcorp/engineering/backend:
+app.js
+database.sql
+server_config.txt
+
+techcorp/engineering/devops:
+docker-compose.yml
+Dockerfile
+pipeline.txt
+security_audit.txt
+server_notice.txt
+
+techcorp/engineering/frontend:
+app_config.txt
+index.html
+styles.css
+
+techcorp/hr:
+onboarding
+policies
+task5_file_organization.txt
+
+techcorp/hr/onboarding:
+checklist.txt
+handbook.txt
+leave_policy.txt
+welcome_guide.txt
+
+techcorp/hr/policies:
+leave_policy.txt
+remote_work.txt
+
+techcorp/marketing:
+assets
+campaigns
+
+techcorp/marketing/assets:
+banner.jpg
+brochure.pdf
+logo_brief.txt
+logo.png
+
+techcorp/marketing/campaigns:
+q1_2026_launch.txt
+social_media.txt
+
+--- Sort by Size: engineering/ (ls -lS) ---
+total 4
+-rw-rw-r-- 1 inaco inaco 26 Mar 20 07:01 app_config.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:01 index.html
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:01 styles.css
+total 4
+-rw-rw-r-- 1 inaco inaco 29 Mar 20 07:02 server_config.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 app.js
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 database.sql
+total 12
+-rw-rw-r-- 1 inaco inaco 48 Mar 22 11:43 server_notice.txt
+-rw-rw-r-- 1 inaco inaco 34 Mar 22 14:00 security_audit.txt
+-rw-rw-r-- 1 inaco inaco 29 Mar 20 07:02 pipeline.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 docker-compose.yml
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 Dockerfile
+
+--- Sort by Time: techcorp/ (ls -lt) ---
+total 8
+-rw-rw-r-- 1 inaco inaco 32 Mar 20 07:01 remote_work.txt
+-rw-rw-r-- 1 inaco inaco 39 Mar 20 07:01 leave_policy.txt
+total 12
+-rw-rw-r-- 1 inaco inaco 39 Mar 22 13:09 leave_policy.txt
+-rw-rw-r-- 1 inaco inaco 23 Mar 22 11:43 handbook.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:01 checklist.txt
+-rw-rw-r-- 1 inaco inaco 52 Mar 20 07:01 welcome_guide.txt
+total 8
+-rw-rw-r-- 1 inaco inaco 32 Mar 20 07:02 q1_2026_launch.txt
+-rw-rw-r-- 1 inaco inaco 35 Mar 20 07:02 social_media.txt
+
+--- Human-Readable (ls -lh) ---
+total 4.0K
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 banner.jpg
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 brochure.pdf
+-rw-rw-r-- 1 inaco inaco 22 Mar 22 11:55 logo_brief.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 logo.png
+total 12K
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 docker-compose.yml
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 Dockerfile
+-rw-rw-r-- 1 inaco inaco 29 Mar 20 07:02 pipeline.txt
+-rw-rw-r-- 1 inaco inaco 34 Mar 22 14:00 security_audit.txt
+-rw-rw-r-- 1 inaco inaco 48 Mar 22 11:43 server_notice.txt
+
+--- Reverse Sort by Size (ls -rlS) ---
+total 4
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 database.sql
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 app.js
+-rw-rw-r-- 1 inaco inaco 29 Mar 20 07:02 server_config.txt
+
+--- Reverse Sort by Time (ls -rlt) ---
+total 12
+-rw-rw-r-- 1 inaco inaco 52 Mar 20 07:01 welcome_guide.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:01 checklist.txt
+-rw-rw-r-- 1 inaco inaco 23 Mar 22 11:43 handbook.txt
+-rw-rw-r-- 1 inaco inaco 39 Mar 22 13:09 leave_policy.txt
+
+--- Combined: Recursive + Human-Readable + Sort by Size (ls -lhRS) ---
+techcorp/:
+total 12K
+drwxrwxr-x 5 inaco inaco 4.0K Mar 20 07:00 engineering
+drwxrwxr-x 4 inaco inaco 4.0K Mar 22 13:47 hr
+drwxrwxr-x 4 inaco inaco 4.0K Mar 22 11:45 marketing
+
+techcorp/engineering:
+total 12K
+drwxrwxr-x 2 inaco inaco 4.0K Mar 22 11:55 backend
+drwxrwxr-x 2 inaco inaco 4.0K Mar 22 14:00 devops
+drwxrwxr-x 2 inaco inaco 4.0K Mar 20 07:01 frontend
+
+techcorp/engineering/backend:
+total 4.0K
+-rw-rw-r-- 1 inaco inaco 29 Mar 20 07:02 server_config.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 app.js
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 database.sql
+
+techcorp/engineering/devops:
+total 12K
+-rw-rw-r-- 1 inaco inaco 48 Mar 22 11:43 server_notice.txt
+-rw-rw-r-- 1 inaco inaco 34 Mar 22 14:00 security_audit.txt
+-rw-rw-r-- 1 inaco inaco 29 Mar 20 07:02 pipeline.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 docker-compose.yml
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 Dockerfile
+
+techcorp/engineering/frontend:
+total 4.0K
+-rw-rw-r-- 1 inaco inaco 26 Mar 20 07:01 app_config.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:01 index.html
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:01 styles.css
+
+techcorp/hr:
+total 12K
+drwxrwxr-x 2 inaco inaco 4.0K Mar 22 13:09 onboarding
+drwxrwxr-x 2 inaco inaco 4.0K Mar 22 14:00 policies
+-rw-rw-r-- 1 inaco inaco   78 Mar 22 13:47 task5_file_organization.txt
+
+techcorp/hr/onboarding:
+total 12K
+-rw-rw-r-- 1 inaco inaco 52 Mar 20 07:01 welcome_guide.txt
+-rw-rw-r-- 1 inaco inaco 39 Mar 22 13:09 leave_policy.txt
+-rw-rw-r-- 1 inaco inaco 23 Mar 22 11:43 handbook.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:01 checklist.txt
+
+techcorp/hr/policies:
+total 8.0K
+-rw-rw-r-- 1 inaco inaco 39 Mar 20 07:01 leave_policy.txt
+-rw-rw-r-- 1 inaco inaco 32 Mar 20 07:01 remote_work.txt
+
+techcorp/marketing:
+total 8.0K
+drwxrwxr-x 2 inaco inaco 4.0K Mar 22 11:55 assets
+drwxrwxr-x 2 inaco inaco 4.0K Mar 22 13:44 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-rw-r-- 1 inaco inaco 22 Mar 22 11:55 logo_brief.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 banner.jpg
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 brochure.pdf
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 inaco inaco 35 Mar 20 07:02 social_media.txt
+-rw-rw-r-- 1 inaco inaco 32 Mar 20 07:02 q1_2026_launch.txt
+
+--- Challenge Investigation ---
+total 12
+-rw-rw-r-- 1 inaco inaco 39 Mar 22 13:09 leave_policy.txt
+-rw-rw-r-- 1 inaco inaco 23 Mar 22 11:43 handbook.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:01 checklist.txt
+-rw-rw-r-- 1 inaco inaco 52 Mar 20 07:01 welcome_guide.txt
+techcorp/marketing/:
+total 8.0K
+drwxrwxr-x 2 inaco inaco 4.0K Mar 22 11:55 assets
+drwxrwxr-x 2 inaco inaco 4.0K Mar 22 13:44 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 banner.jpg
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 brochure.pdf
+-rw-rw-r-- 1 inaco inaco 22 Mar 22 11:55 logo_brief.txt
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 inaco inaco 32 Mar 20 07:02 q1_2026_launch.txt
+-rw-rw-r-- 1 inaco inaco 35 Mar 20 07:02 social_media.txt
+total 12
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 Dockerfile
+-rw-rw-r-- 1 inaco inaco  0 Mar 20 07:02 docker-compose.yml
+-rw-rw-r-- 1 inaco inaco 29 Mar 20 07:02 pipeline.txt
+-rw-rw-r-- 1 inaco inaco 34 Mar 22 14:00 security_audit.txt
+-rw-rw-r-- 1 inaco inaco 48 Mar 22 11:43 server_notice.txt
+total 100K
+drwxr-x--- 18 inaco inaco 4.0K Mar 22 11:29 .
+drwxr-xr-x  3 root  root  4.0K Feb  1 21:01 ..
+drwx------ 10 inaco inaco 4.0K Mar 13 13:11 .cache
+drwx------ 15 inaco inaco 4.0K Mar 17 14:51 .config
+drwxr-xr-x  2 inaco inaco 4.0K Feb  1 21:01 Desktop
+drwxr-xr-x  2 inaco inaco 4.0K Feb  1 21:01 Documents
+drwxr-xr-x  2 inaco inaco 4.0K Mar 19 22:17 Downloads
+drwxrwxr-x  3 inaco inaco 4.0K Mar  5 12:05 LabFiles
+drwx------  4 inaco inaco 4.0K Feb  1 21:01 .local
+drwxr-xr-x  2 inaco inaco 4.0K Feb  1 21:01 Music
+drwxrwxr-x  5 inaco inaco 4.0K Mar 19 10:43 os-se-p20240003
+drwxr-xr-x  3 inaco inaco 4.0K Feb  1 21:02 Pictures
+drwxr-xr-x  2 inaco inaco 4.0K Feb  1 21:01 Public
+drwx------  6 inaco inaco 4.0K Mar 19 15:53 snap
+drwx------  2 inaco inaco 4.0K Mar 17 13:31 .ssh
+drwxr-xr-x  2 inaco inaco 4.0K Feb  1 21:01 Templates
+drwxrwxr-x  4 inaco inaco 4.0K Mar  4 14:44 test
+drwxr-xr-x  2 inaco inaco 4.0K Feb  1 21:01 Videos
+-rw-r--r--  1 inaco inaco 3.7K Mar 31  2024 .bashrc
+-rw-rw-r--  1 inaco inaco 3.0K Mar 22 11:29 README.md
+-rw-r--r--  1 inaco inaco  807 Mar 31  2024 .profile
+-rw-------  1 inaco inaco  287 Mar 19 10:04 .bash_history
+-rw-r--r--  1 inaco inaco  220 Mar 31  2024 .bash_logout
+-rw-rw-r--  1 inaco inaco   62 Mar 12 16:52 .gitconfig
+-rw-------  1 inaco inaco   20 Mar 19 19:50 .lesshst
+-rw-rw-r--  1 inaco inaco    0 Mar 21 15:22 os-se-
+-rw-r--r--  1 inaco inaco    0 Feb  1 21:07 .sudo_as_admin_successful

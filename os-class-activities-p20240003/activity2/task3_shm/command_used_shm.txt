@@ -1,0 +1,20 @@
+   56  awk '{print $1}' ~/lab4-challenge/access.log | sort | uniq -c | sort -rn
+   57  grep ' 403 ' ~/lab4-challenge/access.log
+   58  grep ' 403 ' ~/lab4-challenge/access.log | awk '{print $1, $7}'
+   59  grep ' 403 ' ~/lab4-challenge/access.log | awk '{print $1}' | sort | uniq -c | sort -rn
+   60  echo "10.22.42.101|/admin/logs|5" > ~/lab4-challenge/final_answer.txt
+   61  EOF
+   62  cat ~/lab4-challenge/commands.txt
+   63  exit
+   64  cd os-se-p20240003/os-lab-p20240003
+   65  git pull
+   66  cd os-se-p20240003/os-lab-p20240003
+   67  git pull
+   68  exit
+   69  cd os-se-p20240003/os-class-activities-p20240003
+   70  git pull
+   71  exit
+   72  cd os-se-p20240003/os-class-activities-p20240003/
+   73  git pull
+   74  cd activity2
+   75  history | tail -n 20 > command_used_shm.txt

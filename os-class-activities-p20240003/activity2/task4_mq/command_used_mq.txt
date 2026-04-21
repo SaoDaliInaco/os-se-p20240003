@@ -1,0 +1,20 @@
+  328  mkdir task4_mq
+  329  cd ..
+  330  mkdir task4_mq
+  331  cd task4_mq
+  332  nano common.h
+  333  nano sender.c
+  334  nano receiver.c
+  335  gcc -o sender sender.c -lrt
+  336  nano sender.c
+  337  gcc -o sender sender.c -lrt
+  338  nano sender.c
+  339  gcc -o sender sender.c -lrt
+  340  nano receiver.c
+  341  gcc -o receiver receiver.c -lrt
+  342  nano receiver.c
+  343  gcc -o receiver receiver.c -lrt
+  344  ./sender
+  345  ./receiver > result-mq-ipc.txt
+  346  cat result-mq-ipc.txt
+  347  history | tail -n 20 > command_used_mq.txt

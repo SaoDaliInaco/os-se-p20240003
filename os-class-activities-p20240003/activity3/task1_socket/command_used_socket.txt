@@ -1,0 +1,20 @@
+  305  echo "Zombie disappeared after parent called wait()." >> task5_orphan_zombie.txt
+  306  nano three_children.c
+  307  gcc -o three_children three_children.c
+  308  ./three_children
+  309  ps --forest
+  310  nano RREADME.md
+  311  git add .
+  312  git commit -m "Lab 4: I/O Redirection, Pipelines & Process Management"
+  313  git push origin master
+  314  cd ~
+  315  ssh ssh2.rathpisey.site
+  316  cd os-se-p20240003/os-class-activities-p20240003/activity3
+  317  cd task1_socket
+  318  ./server
+  319  ./server > result_server.txt 2>&1 &
+  320  sleep 1
+  321  ./client > result_client.txt 2>&1
+  322  wait
+  323  cat result_server.txt result_client.txt > result_socket.txt
+  324  history | tail -n 20 > command_used_socket.txt

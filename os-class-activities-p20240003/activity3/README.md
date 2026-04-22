@@ -3,7 +3,6 @@
 - **Student Name:** Sao Dali Inaco
 - **Student ID:** p20240003
 - **Date:** 19/04/2026
-
 ---
 
 ## Task 1: TCP Socket Communication (C)

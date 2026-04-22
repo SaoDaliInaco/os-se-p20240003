@@ -1,0 +1,4 @@
+inaco       6382    6275    6382  0    1 00:25 pts/1    00:00:00 grep --color=auto threads_observe
+    PID    SPID TTY          TIME CMD
+    PID    SPID TTY          TIME CMD
+--- /proc/6603/task/ listing ---

@@ -1,0 +1,30 @@
+  316  cd os-se-p20240003/os-class-activities-p20240003/activity3
+  317  cd task1_socket
+  318  ./server
+  319  ./server > result_server.txt 2>&1 &
+  320  sleep 1
+  321  ./client > result_client.txt 2>&1
+  322  wait
+  323  cat result_server.txt result_client.txt > result_socket.txt
+  324  history | tail -n 20 > command_used_socket.txt
+  325  cd os-se-p20240003/os-class-activities-p20240003/activity3
+  326  sudo apt update
+  327  sudo apt install build-essential default-jdk -y
+  328  gcc --version
+  329  java --version
+  330  javac --version
+  331  cd task3
+  332  cd task3_java
+  333  javac ThreadDemo.java
+  334  java ThreadDemo > result_thread_demo.txt 2>&1
+  335  cat result_thread_demo.txt
+  336  nano RunnableDemo.java
+  337  javac RunnableDemo.java
+  338  java RunnableDemo > result_runnable_demo.txt 2>&1
+  339  cat result_runnable_demo.txt
+  340  nano PoolDemo.java
+  341  javac PoolDemo.java
+  342  java PoolDemo > result_pool_demo.txt 2>&1
+  343  cat result_pool_demo.txt
+  344  $ history | tail -n 30 > command_used_java.txt
+  345  history | tail -n 30 > command_used_java.txt

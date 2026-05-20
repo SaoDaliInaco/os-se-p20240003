@@ -1,0 +1,31 @@
+Script started on 2026-05-20 20:14:42+07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="32"]
+[?2004h]0;inaco@inaco-VMware-Virtual-Platform: ~/os-se-p20240003/os-lab-p20240003/lab6[01;32minaco@inaco-VMware-Virtual-Platform[00m:[01;34m~/os-se-p20240003/os-lab-p20240003/lab6[00m$ [7msudo mkdir -p /opt/techcorp/dropbox[27msudo mkdir -p /opt/techcorp/dropbox
+[?2004l[sudo] password for inaco: 
+[?2004h]0;inaco@inaco-VMware-Virtual-Platform: ~/os-se-p20240003/os-lab-p20240003/lab6[01;32minaco@inaco-VMware-Virtual-Platform[00m:[01;34m~/os-se-p20240003/os-lab-p20240003/lab6[00m$ [7msudo chgrp devteam /opt/techcorp/dropbox[27msudo chgrp devteam /opt/techcorp/dropbox
+[?2004l[?2004h]0;inaco@inaco-VMware-Virtual-Platform: ~/os-se-p20240003/os-lab-p20240003/lab6[01;32minaco@inaco-VMware-Virtual-Platform[00m:[01;34m~/os-se-p20240003/os-lab-p20240003/lab6[00m$ [7msudo chmod 3770 /opt/techcorp/dropbox[27msudo chmod 3770 /opt/techcorp/dropbox
+[?2004l[?2004h]0;inaco@inaco-VMware-Virtual-Platform: ~/os-se-p20240003/os-lab-p20240003/lab6[01;32minaco@inaco-VMware-Virtual-Platform[00m:[01;34m~/os-se-p20240003/os-lab-p20240003/lab6[00m$ [7mls -ld /opt/techcorp/dropbox[27mls -ld /opt/techcorp/dropbox
+[?2004ldrwxrws--T 2 root devteam 4096 May 20 19:54 [0m[37;44m/opt/techcorp/dropbox[0m
+[?2004h]0;inaco@inaco-VMware-Virtual-Platform: ~/os-se-p20240003/os-lab-p20240003/lab6[01;32minaco@inaco-VMware-Virtual-Platform[00m:[01;34m~/os-se-p20240003/os-lab-p20240003/lab6[00m$ [7msu - dev_alice[27msu - dev_alice
+[?2004lPassword: 
+[?2004h]0;dev_alice@inaco-VMware-Virtual-Platform: ~[01;32mdev_alice@inaco-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mtouch /opt/techcorp/dropbox/alice.txt[27mtouch /opt/techcorp/dropbox/alice.txt
+[?2004l[?2004h]0;dev_alice@inaco-VMware-Virtual-Platform: ~[01;32mdev_alice@inaco-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mls -l /opt/techcorp/dropbox[27mls -l /opt/techcorp/dropbox
+[?2004ltotal 0
+-rw-rw-r-- 1 dev_alice devteam 0 May 20 20:16 alice.txt
+-rw-rw-r-- 1 dev_bob   devteam 0 May 20 19:54 bob.txt
+[?2004h]0;dev_alice@inaco-VMware-Virtual-Platform: ~[01;32mdev_alice@inaco-VMware-Virtual-Platform[00m:[01;34m~[00m$ exit
+[?2004llogout
+[?2004h]0;inaco@inaco-VMware-Virtual-Platform: ~/os-se-p20240003/os-lab-p20240003/lab6[01;32minaco@inaco-VMware-Virtual-Platform[00m:[01;34m~/os-se-p20240003/os-lab-p20240003/lab6[00m$ [7msu - dev_bob[27msu - dev_bob
+[?2004lPassword: 
+[?2004h]0;dev_bob@inaco-VMware-Virtual-Platform: ~[01;32mdev_bob@inaco-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mtouch /opt/techcorp/dropbox/bob.txt[27mtouch /opt/techcorp/dropbox/bob.txt
+[?2004l[?2004h]0;dev_bob@inaco-VMware-Virtual-Platform: ~[01;32mdev_bob@inaco-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mrm /opt/techcorp/dropbox/alice.txt[27mrm /opt/techcorp/dropbox/alice.txt
+[?2004lrm: cannot remove '/opt/techcorp/dropbox/alice.txt': Operation not permitted
+[?2004h]0;dev_bob@inaco-VMware-Virtual-Platform: ~[01;32mdev_bob@inaco-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mls -l /opt/techcorp/dropbox[27mls -l /opt/techcorp/dropbox
+[?2004ltotal 0
+-rw-rw-r-- 1 dev_alice devteam 0 May 20 20:16 alice.txt
+-rw-rw-r-- 1 dev_bob   devteam 0 May 20 20:17 bob.txt
+[?2004h]0;dev_bob@inaco-VMware-Virtual-Platform: ~[01;32mdev_bob@inaco-VMware-Virtual-Platform[00m:[01;34m~[00m$ exit
+[?2004llogout
+[?2004h]0;inaco@inaco-VMware-Virtual-Platform: ~/os-se-p20240003/os-lab-p20240003/lab6[01;32minaco@inaco-VMware-Virtual-Platform[00m:[01;34m~/os-se-p20240003/os-lab-p20240003/lab6[00m$ exit
+[?2004lexit
+
+Script done on 2026-05-20 23:07:40+07:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,6 @@
+=== broadcaster script ===
+-rwxrwxr-x 1 inaco inaco 331 May 28 16:24 /home/inaco/bin/broadcaster
+=== outbox permissions ===
+drwxr-xr-x 2 inaco inaco 4096 May 28 16:24 /home/inaco/public_outbox
+=== secret.txt ===
+mutex - 2026-05-28 16:24:30

@@ -1,0 +1,6 @@
+=== guestbook permissions ===
+-rw------- 1 inaco inaco 32 May 28 16:54 /home/inaco/guestbook.txt
+=== sign_book permissions ===
+-rwsr-xr-x 1 inaco inaco 16096 May 28 16:53 /home/inaco/bin/sign_book
+=== guestbook contents ===
+Visitor signed: Hello from lyda

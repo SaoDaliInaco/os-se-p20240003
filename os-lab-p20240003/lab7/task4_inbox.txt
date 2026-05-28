@@ -1,0 +1,4 @@
+=== inbox permissions ===
+drwx-wx-wx 2 inaco inaco 4096 May 28 16:17 /home/inaco/public_inbox
+=== inbox files as owner ===
+total 0

@@ -1,0 +1,5 @@
+=== warmup permissions ===
+-rwxrwxr-x 1 inaco inaco 76 May 28 15:55 /home/inaco/bin/warmup
+=== warmup output ===
+Hello from my first script! My current directory is:
+/home/inaco/bin

@@ -1,0 +1,6 @@
+========================================
+Welcome, inaco
+Users currently logged in: 2
+Server uptime: up 27 minutes
+Random tech quote: Keep calm and check the logs.
+========================================

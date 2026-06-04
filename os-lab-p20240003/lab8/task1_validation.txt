@@ -1,0 +1,6 @@
+=== missing argument test ===
+Usage: buy_widget <username> <quantity>
+=== invalid quantity test ===
+Error: quantity must be a positive integer
+=== script permissions ===
+-rwxrwxr-x 1 inaco inaco 357 Jun  2 14:17 /home/inaco/bin/buy_widget

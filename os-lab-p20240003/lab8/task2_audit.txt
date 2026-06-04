@@ -1,0 +1,8 @@
+=== transaction tests ===
+Purchase successful!
+Transaction Failed: Not enough inventory!
+Error: Quantity must be a positive integer.
+=== inventory ===
+95
+=== sales.log ===
+[p20240003] [SUCCESS] Alice bought 5 widgets.

@@ -1,0 +1,15 @@
+Run 1 final inventory: 78
+Run 2 final inventory: 84
+Run 3 final inventory: 90
+Run 4 final inventory: 76
+Run 5 final inventory: 72
+
+Explanation:
+The results are inconsistent and suspicious because all 50 bots run concurrently using &
+(background processes), each reading and writing the shared inventory file without any
+synchronization. This is a classic race condition: multiple bots read the same current
+value before any of them write back, so their writes overwrite each other and only some
+subtractions actually take effect. The OS process scheduler decides the order and timing
+of each bot's execution differently on every run, which is why the final inventory varies
+wildly across runs — and can even go negative when writes partially overlap in an
+unexpected order.

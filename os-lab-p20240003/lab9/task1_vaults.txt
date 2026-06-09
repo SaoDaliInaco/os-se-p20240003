@@ -1,0 +1,11 @@
+=== working folder ===
+/home/se-sao-dali-inaco/os-lab-deadlock
+=== vault directories ===
+drwxrwxr-x 2 se-sao-dali-inaco se-sao-dali-inaco 4096 Jun  9 14:22 /home/se-sao-dali-inaco/os-lab-deadlock/vault_alpha
+drwxrwxr-x 2 se-sao-dali-inaco se-sao-dali-inaco 4096 Jun  9 14:23 /home/se-sao-dali-inaco/os-lab-deadlock/vault_beta
+=== vault lock files ===
+-rw-rw-r-- 1 se-sao-dali-inaco se-sao-dali-inaco 0 Jun  9 14:20 /home/se-sao-dali-inaco/os-lab-deadlock/vault_alpha/vault.lock
+-rw-rw-r-- 1 se-sao-dali-inaco se-sao-dali-inaco 0 Jun  9 14:21 /home/se-sao-dali-inaco/os-lab-deadlock/vault_beta/vault.lock
+=== vault marker files ===
+Vault Alpha local resource for <p20240003>
+Vault beta local resource for <p20240003>

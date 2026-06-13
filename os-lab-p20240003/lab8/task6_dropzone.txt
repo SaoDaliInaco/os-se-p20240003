@@ -1,0 +1,7 @@
+=== drop zone permissions ===
+drwxrwxrwt 2 se-sao-dali-inaco se-sao-dali-inaco 4096 Jun 13 15:44 /home/se-sao-dali-inaco/vendor_reports
+=== drop zone files ===
+total 4
+-rw-rw-r-- 1 se-sao-dali-inaco se-sao-dali-inaco 15 Jun 13 15:44 partner_report.txt
+=== partner deletion result ===
+Partner attempted to delete my_rules.txt and received 'Operation not permitted' due to sticky bit protection.

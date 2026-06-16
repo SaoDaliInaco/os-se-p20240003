@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir -p ~/vendor_reports
+chmod 1777 ~/vendor_reports
+
+echo "partner report" > ~/vendor_reports/partner_report.txt
+echo "my rules" > ~/vendor_reports/my_rules.txt

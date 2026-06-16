@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir -p logs csv tmp
+
+mv *.log logs/ 2>/dev/null
+mv *.csv csv/ 2>/dev/null
+mv *.tmp tmp/ 2>/dev/null

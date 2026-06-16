@@ -1,0 +1,16 @@
+=== my automation script ===
+#!/bin/bash
+set -euo pipefail
+
+base="$HOME/os-lab-automation"
+logfile="$base/logs/my_automation.log"
+
+echo "$(date '+%Y-%m-%d %H:%M:%S') | uptime: $(uptime -p)" >> "$logfile"
+=== my cron line ===
+* * * * * /home/se-sao-dali-inaco/bin/my_automation >> /home/se-sao-dali-inaco/os-lab-automation/logs/cron_my_automation.log 2>&1
+=== output produced on schedule ===
+2026-06-16 23:06:31 | uptime: up 3 weeks, 1 day, 6 hours, 36 minutes
+2026-06-16 23:07:01 | uptime: up 3 weeks, 1 day, 6 hours, 37 minutes
+2026-06-16 23:08:01 | uptime: up 3 weeks, 1 day, 6 hours, 38 minutes
+2026-06-16 23:09:01 | uptime: up 3 weeks, 1 day, 6 hours, 39 minutes
+2026-06-16 23:10:01 | uptime: up 3 weeks, 1 day, 6 hours, 40 minutes

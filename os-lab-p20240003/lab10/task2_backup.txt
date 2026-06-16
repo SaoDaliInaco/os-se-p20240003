@@ -1,0 +1,23 @@
+=== backup script permissions ===
+-rwxrwxr-x 1 se-sao-dali-inaco se-sao-dali-inaco 792 Jun 16 14:13 /home/se-sao-dali-inaco/bin/backup_project
+=== archives kept (should be 3) ===
+/home/se-sao-dali-inaco/os-lab-automation/backups/project_20260616_141437.tar.gz
+/home/se-sao-dali-inaco/os-lab-automation/backups/project_20260616_141429.tar.gz
+/home/se-sao-dali-inaco/os-lab-automation/backups/project_20260616_141424.tar.gz
+=== backup log ===
+2026-06-16 14:14:21 | starting backup of /home/se-sao-dali-inaco/os-lab-automation/project
+2026-06-16 14:14:21 | created archive /home/se-sao-dali-inaco/os-lab-automation/backups/project_20260616_141421.tar.gz
+2026-06-16 14:14:21 | no old archives to prune
+2026-06-16 14:14:21 | backup finished successfully
+2026-06-16 14:14:24 | starting backup of /home/se-sao-dali-inaco/os-lab-automation/project
+2026-06-16 14:14:24 | created archive /home/se-sao-dali-inaco/os-lab-automation/backups/project_20260616_141424.tar.gz
+2026-06-16 14:14:24 | no old archives to prune
+2026-06-16 14:14:24 | backup finished successfully
+2026-06-16 14:14:29 | starting backup of /home/se-sao-dali-inaco/os-lab-automation/project
+2026-06-16 14:14:29 | created archive /home/se-sao-dali-inaco/os-lab-automation/backups/project_20260616_141429.tar.gz
+2026-06-16 14:14:29 | no old archives to prune
+2026-06-16 14:14:29 | backup finished successfully
+2026-06-16 14:14:37 | starting backup of /home/se-sao-dali-inaco/os-lab-automation/project
+2026-06-16 14:14:37 | created archive /home/se-sao-dali-inaco/os-lab-automation/backups/project_20260616_141437.tar.gz
+2026-06-16 14:14:37 | pruned old archive /home/se-sao-dali-inaco/os-lab-automation/backups/project_20260616_141421.tar.gz
+2026-06-16 14:14:37 | backup finished successfully

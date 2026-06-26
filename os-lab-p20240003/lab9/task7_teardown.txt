@@ -1,0 +1,14 @@
+=== teardown script ===
+-rwxrwxr-x 1 inaco inaco 334 Jun 26 15:53 /home/inaco/bin/teardown
+=== process check ===
+root           5  0.0  0.0      0     0 ?        I<   14:28   0:00 [kworker/R-sync_wq]
+=== final working folder ===
+/home/inaco/os-lab-deadlock
+/home/inaco/os-lab-deadlock/public_dr_alpha
+/home/inaco/os-lab-deadlock/public_dr_alpha/vault.lock
+/home/inaco/os-lab-deadlock/vault_alpha
+/home/inaco/os-lab-deadlock/vault_alpha/README.txt
+/home/inaco/os-lab-deadlock/vault_alpha/vault.lock
+/home/inaco/os-lab-deadlock/vault_beta
+/home/inaco/os-lab-deadlock/vault_beta/README.txt
+/home/inaco/os-lab-deadlock/vault_beta/vault.lock

@@ -1,0 +1,6 @@
+=== sync_timeout permissions ===
+-rwxrwxr-x 1 inaco inaco 585 Jun 26 15:26 /home/inaco/bin/sync_timeout
+=== timeout evidence ===
+Paste the timeout error and exit status shown in your terminal.
+=== process check after stopping old script ===
+root           5  0.0  0.0      0     0 ?        I<   14:28   0:00 [kworker/R-sync_wq]

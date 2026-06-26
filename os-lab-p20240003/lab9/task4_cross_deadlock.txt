@@ -1,0 +1,10 @@
+=== public DR permissions ===
+drwx--x--x 26 inaco inaco 4096 Jun 26 15:00 /home/inaco
+drwxrwxr-x  3 inaco inaco 4096 Jun 26 15:00 /home/inaco/os-lab-deadlock
+drwxr-xr-x  2 inaco inaco 4096 Jun 26 15:00 /home/inaco/os-lab-deadlock/public_dr_alpha
+total 0
+-rw-rw-rw- 1 inaco inaco 0 Jun 26 15:13 vault.lock
+=== running cross sync processes ===
+=== partner role ===
+Partner username: dev_alice
+My role: Player A

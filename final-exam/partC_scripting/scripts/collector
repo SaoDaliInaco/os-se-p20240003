@@ -1,0 +1,18 @@
+#!/bin/bash
+dirs=("$HOME/os-se-p20240003/final-exam/partC_scripting/data1"
+      "$HOME/os-se-p20240003/final-exam/partC_scripting/data2")
+report="$HOME/os-se-p20240003/final-exam/partC_scripting/collector_report.txt"
+> "$report"
+
+for d in "${dirs[@]}"; do
+  for f in "$d"/* "$d"/nonexistent_file.txt; do
+    if [ -e "$f" ] && [ -r "$f" ]; then
+      echo "--- $f ---" >> "$report"
+      cat "$f" >> "$report"
+      echo "" >> "$report"
+    else
+      echo "SKIPPED (missing or unreadable): $f" >> "$report"
+    fi
+  done
+done
+echo "Report written to $report"

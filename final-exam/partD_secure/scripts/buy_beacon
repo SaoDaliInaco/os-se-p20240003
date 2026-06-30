@@ -1,0 +1,27 @@
+#!/bin/bash
+# Usage: buy_beacon <buyer_name> <quantity>
+BASE="$HOME/os-se-p20240003/final-exam/partD_secure/data"
+STOCK_FILE="$BASE/stock.txt"
+LOG_FILE="$BASE/sales.log"
+LOCK_FILE="$BASE/stock.lock"
+STUDENT_ID="p20240003"
+
+buyer="$1"
+qty="$2"
+
+if [ -z "$buyer" ] || ! [[ "$qty" =~ ^[0-9]+$ ]] || [ "$qty" -le 0 ]; then
+  echo "Invalid input: need buyer name and positive integer quantity"
+  exit 1
+fi
+
+(
+  flock -x 200
+  stock=$(cat "$STOCK_FILE")
+  if [ "$qty" -le "$stock" ]; then
+    new_stock=$((stock - qty))
+    echo "$new_stock" > "$STOCK_FILE"
+    echo "$(date '+%F %T') buyer=$buyer qty=$qty student=$STUDENT_ID remaining=$new_stock" >> "$LOG_FILE"
+  else
+    echo "$(date '+%F %T') FAILED buyer=$buyer qty=$qty student=$STUDENT_ID (insufficient stock=$stock)" >> "$LOG_FILE"
+  fi
+) 200>"$LOCK_FILE"

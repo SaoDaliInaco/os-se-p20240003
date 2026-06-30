@@ -1,0 +1,14 @@
+=== Run 1 ===
+Final stock: 99
+=== Run 2 ===
+Final stock: 99
+=== Run 3 ===
+Final stock: 99
+Note: With stock=100 and 40 concurrent buyers (1 unit each), the correct final
+stock should be 60. The unpatched buy_beacon_unsafe consistently produced 99 
+across all 3 runs instead of 60. This is because the artificial sleep(0.1) widens 
+the race window enough that all 40 processes read stock=100 BEFORE any of them 
+writes back — each computes 100-1=99 independently, and since they all write 
+to the same file, only the last write "wins," overwriting all the others. 
+39 of the 40 purchases were silently lost. This demonstrates a severe 
+TOCTOU (time-of-check-to-time-of-use) race condition.

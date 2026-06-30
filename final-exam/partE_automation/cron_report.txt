@@ -1,0 +1,30 @@
+## crontab -l
+# Lab10 GRADED session job - fires once at 2:30 PM on 2026-06-16 (lab session)
+30 14 16 6 * /home/se-sao-dali-inaco/bin/lab_session_job >> /home/se-sao-dali-inaco/os-lab-automation/logs/cron_session_job.log 2>&1
+# Lab10 GRADED deadline job - fires once at 2:30 PM on 2026-06-22 (before deadline)
+30 14 22 6 * /home/se-sao-dali-inaco/bin/deadline_job >> /home/se-sao-dali-inaco/os-lab-automation/logs/cron_deadline_job.log 2>&1
+* * * * * /home/se-sao-dali-inaco/bin/timed_job /home/se-sao-dali-inaco/os-se-p20240003/final-exam/partE_automation/logs/cron_recurring.log
+23 15 * * * /home/se-sao-dali-inaco/bin/timed_job /home/se-sao-dali-inaco/os-se-p20240003/final-exam/partE_automation/logs/cron_oneshot.log
+
+## cron_recurring.log
+2026-06-30 15:20:01 timed_job fired (student p20240003)
+2026-06-30 15:21:01 timed_job fired (student p20240003)
+2026-06-30 15:22:01 timed_job fired (student p20240003)
+2026-06-30 15:23:01 timed_job fired (student p20240003)
+
+## cron_oneshot.log
+2026-06-30 15:23:01 timed_job fired (student p20240003)
+
+## crontab -l (after adding backup_exam)
+# Lab10 GRADED session job - fires once at 2:30 PM on 2026-06-16 (lab session)
+30 14 16 6 * /home/se-sao-dali-inaco/bin/lab_session_job >> /home/se-sao-dali-inaco/os-lab-automation/logs/cron_session_job.log 2>&1
+# Lab10 GRADED deadline job - fires once at 2:30 PM on 2026-06-22 (before deadline)
+30 14 22 6 * /home/se-sao-dali-inaco/bin/deadline_job >> /home/se-sao-dali-inaco/os-lab-automation/logs/cron_deadline_job.log 2>&1
+* * * * * /home/se-sao-dali-inaco/bin/timed_job /home/se-sao-dali-inaco/os-se-p20240003/final-exam/partE_automation/logs/cron_recurring.log
+23 15 * * * /home/se-sao-dali-inaco/bin/timed_job /home/se-sao-dali-inaco/os-se-p20240003/final-exam/partE_automation/logs/cron_oneshot.log
+*/5 * * * * /home/se-sao-dali-inaco/bin/backup_exam
+0 16 * * * /home/se-sao-dali-inaco/bin/backup_exam
+
+## ~/exam-backups listing
+total 16
+-rw-rw-r-- 1 se-sao-dali-inaco se-sao-dali-inaco 15314 Jun 30 15:24 final-exam-20260630_152408.tar.gz

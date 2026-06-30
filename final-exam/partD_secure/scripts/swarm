@@ -1,0 +1,8 @@
+#!/bin/bash
+# Usage: swarm <script_to_call>
+CMD="${1:-buy_beacon}"
+for i in $(seq 1 40); do
+  "$CMD" "buyer$i" 1 &
+done
+wait
+echo "Final stock: $(cat $HOME/os-se-p20240003/final-exam/partD_secure/data/stock.txt)"

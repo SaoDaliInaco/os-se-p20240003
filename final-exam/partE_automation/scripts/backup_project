@@ -1,0 +1,10 @@
+#!/bin/bash
+SRC="$HOME/os-se-p20240003/final-exam/partE_automation/sample_project"
+DEST="$HOME/os-se-p20240003/final-exam/partE_automation/backups"
+mkdir -p "$DEST"
+TS=$(date +%Y%m%d_%H%M%S)
+tar -czf "$DEST/project_backup_$TS.tar.gz" -C "$SRC" .
+echo "$(date '+%F %T') Created project_backup_$TS.tar.gz" >> "$DEST/backup.log"
+cd "$DEST" || exit
+ls -t project_backup_*.tar.gz | tail -n +4 | xargs -r rm --
+echo "$(date '+%F %T') Pruned, retained: $(ls project_backup_*.tar.gz | wc -l)" >> "$DEST/backup.log"

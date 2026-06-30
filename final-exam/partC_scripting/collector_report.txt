@@ -1,0 +1,9 @@
+--- /home/se-sao-dali-inaco/os-se-p20240003/final-exam/partC_scripting/data1/a.txt ---
+file1 contents
+
+SKIPPED (missing or unreadable): /home/se-sao-dali-inaco/os-se-p20240003/final-exam/partC_scripting/data1/locked.txt
+SKIPPED (missing or unreadable): /home/se-sao-dali-inaco/os-se-p20240003/final-exam/partC_scripting/data1/nonexistent_file.txt
+--- /home/se-sao-dali-inaco/os-se-p20240003/final-exam/partC_scripting/data2/b.txt ---
+file2 contents
+
+SKIPPED (missing or unreadable): /home/se-sao-dali-inaco/os-se-p20240003/final-exam/partC_scripting/data2/nonexistent_file.txt

@@ -1,0 +1,25 @@
+=== ls -l private.txt ===
+-rw------- 1 se-sao-dali-inaco se-sao-dali-inaco 0 Jun 30 14:20 private.txt
+
+=== ls -ld shared ===
+drwxr-x--x 2 se-sao-dali-inaco se-sao-dali-inaco 4096 Jun 30 14:20 shared
+
+=== stat private.txt ===
+  File: private.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 252,0	Inode: 47474363    Links: 1
+Access: (0600/-rw-------)  Uid: ( 1140/se-sao-dali-inaco)   Gid: ( 1142/se-sao-dali-inaco)
+Access: 2026-06-30 14:20:40.540950347 +0700
+Modify: 2026-06-30 14:20:40.540950347 +0700
+Change: 2026-06-30 14:20:47.366998546 +0700
+ Birth: 2026-06-30 14:20:40.540950347 +0700
+
+=== stat shared ===
+  File: shared
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 252,0	Inode: 47474362    Links: 2
+Access: (0751/drwxr-x--x)  Uid: ( 1140/se-sao-dali-inaco)   Gid: ( 1142/se-sao-dali-inaco)
+Access: 2026-06-30 14:21:01.523095068 +0700
+Modify: 2026-06-30 14:20:23.467824963 +0700
+Change: 2026-06-30 14:20:59.576082064 +0700
+ Birth: 2026-06-30 14:20:23.467824963 +0700

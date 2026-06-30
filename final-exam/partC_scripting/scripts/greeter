@@ -1,0 +1,13 @@
+#!/bin/bash
+messages=("Stay sharp." "Beacon launch is close." "TechCorp believes in you.")
+user=$(whoami)
+num_users=$(who | wc -l)
+sys_uptime=$(uptime -p)
+rand_msg=${messages[$RANDOM % ${#messages[@]}]}
+
+echo "==================================="
+echo " Welcome, $user"
+echo " Logged in users: $num_users"
+echo " Uptime: $sys_uptime"
+echo " Message: $rand_msg"
+echo "==================================="
